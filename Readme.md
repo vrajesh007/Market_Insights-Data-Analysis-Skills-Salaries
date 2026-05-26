@@ -82,6 +82,7 @@ for i, job_title in enumerate(job_titles):
 
 plt.show()
 ```
+![Likelihood of Skills Requested in the US Job Postings](images/Likelihood_of_Skills_Requested_in_US_Job_Postings.png)
 
 ## Key Insights
 
@@ -109,6 +110,7 @@ plt.gca().yaxis.set_major_formatter(PercentFormatter(decimals=0))
 
 plt.show()
 ```
+![Trending Top Skills for Data Analysts in the US](images/Trending_Top_Skills_for_Data_Analysts_in_the_US.png) 
 
 ## Key Insights
 
@@ -133,6 +135,7 @@ ticks_x = plt.FuncFormatter(lambda y, pos: f'${int(y/1000)}K')
 plt.gca().xaxis.set_major_formatter(ticks_x)
 plt.show()
 ```
+![Salary Distributions of Data Jobs in the US](images/Salary_Distributions_of_Data_Jobs_in_the_US.png)  
 
 ## Key Insights
 
@@ -152,6 +155,7 @@ sns.barplot(data=df_DA_skills, x='median', y=df_DA_skills.index, hue='median', a
 
 plt.show()
 ```
+![The Highest Paid & Most In-Demand Skills for Data Analysts in the US](images/Highest_Paid_and_Most_In_Demand_Skills_for_Data_Analysts_in_the_US.png)
 
 ## Key Insights
 
@@ -176,7 +180,7 @@ import matplotlib.pyplot as plt
 plt.scatter(df_DA_skills_high_demand['skill_percent'], df_DA_skills_high_demand['median_salary'])
 plt.show()
 ```
-
+![Most Optimal Skills for Data Analysts in the US](images/Most_Optimal_Skills_for_Data_Analysts_in_the_US.png) 
 ## Key Insights
 
 - **Database Expertise Pays Well:** Oracle skills command high salaries despite appearing in fewer job postings.
@@ -197,7 +201,7 @@ scatter = sns.scatterplot(
 )
 plt.show()
 ```
-
+![Most Optimal Skills for Data Analysts in the US with Coloring by Technology](images/Most_Optimal_Skills_for_Data_Analysts_in_the_US_with_Coloring_by_Technology.png)
 ## Key Insights
 
 - **Programming Skills:** Coding-related tools consistently align with higher salary ranges.
